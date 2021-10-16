@@ -2,9 +2,12 @@
 
 * [jsonwebtoken](https://github.com/Keats/jsonwebtoken)
 * [img_hash](https://github.com/abonander/img_hash)
+* [rodio](https://github.com/RustAudio/rodio)
 ## DOING
 
 * [serde](https://serde.rs/)
+
+
 
 ## TODO
 
