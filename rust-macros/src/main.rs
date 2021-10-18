@@ -1,5 +1,5 @@
 extern crate proc_macro_examples;
-use proc_macro_examples::{make_answer, show_streams};
+use proc_macro_examples::{make_answer, show_streams, HlperAttr};
 
 make_answer!();
 
@@ -18,8 +18,14 @@ fn invoke3() {}
 #[show_streams { delimiters }]
 fn invoke4() {}
 
+#[derive(HlperAttr, Debug)]
+struct Struct {
+    #[helper] field: ()
+}
 
 
 fn main() {
     println!("{}", answer());
+    let struct1 = Struct { field: () };
+    println!("{:?}", struct1);
 }
