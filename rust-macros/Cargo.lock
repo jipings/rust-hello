@@ -3,5 +3,12 @@
 version = 3
 
 [[package]]
+name = "proc_macro_examples"
+version = "0.1.0"
+
+[[package]]
 name = "rust-macros"
 version = "0.1.0"
+dependencies = [
+ "proc_macro_examples",
+]
