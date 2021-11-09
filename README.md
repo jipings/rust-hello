@@ -5,6 +5,7 @@
 * [rodio](https://github.com/RustAudio/rodio)
 * ["Type-Driven API Design in Rust" by Will Crichton](https://www.youtube.com/watch?v=bnnacleqg6k)
 * [shaku](https://crates.io/crates/shaku)
+* [tracing](https://github.com/tokio-rs/tracing)
 ## DOING
 
 * [serde](https://serde.rs/)
