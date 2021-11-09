@@ -1,5 +1,5 @@
 extern crate proc_macro_examples;
-use proc_macro_examples::{make_answer, show_streams, HlperAttr};
+use proc_macro_examples::{make_answer, show_streams, HlperAttr, flaky_test};
 
 make_answer!();
 
@@ -21,6 +21,11 @@ fn invoke4() {}
 #[derive(HlperAttr, Debug)]
 struct Struct {
     #[helper] field: ()
+}
+
+#[flaky_test]
+fn my_test() {
+    assert_eq!(1, 1);
 }
 
 
