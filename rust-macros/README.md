@@ -3,6 +3,7 @@
 
 ## [macros.md](https://rustwiki.org/zh-CN/reference/macros.html)
 
+## [proc-macro-workshop 练习](https://github.com/dtolnay/proc-macro-workshop)
 ### 声明宏
 
 句法
@@ -117,3 +118,12 @@ TokenStream 并没有把他们识别为路径表达式，同样，它也不区�
 
 所谓的 Rust 过程宏，就是我们可以自己修改上面的 item 变量中的值，从而等价于加工原始输入代码，最后将加工后的代码返回给编译器即可。
 
+## 调试
+
+[cargo-expand](https://github.com/dtolnay/cargo-expand)
+
+```rust 
+eprintln!("TOKENS: {}", tokens);
+// Stderr is also a helpful way to see the structure of the syntax tree that gets parsed from the input of the macro.
+eprintln!("INPUT: {:#?}", syntax_tree);
+```
